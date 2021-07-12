@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "open_sansbold";
+  src: url("fonts/opensans-bold-webfont.woff2") format("woff2"),
+    url("fonts/opensans-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -44,6 +52,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  font-family: "open_sansbold";
   width: 133px;
   height: 100%;
 }
@@ -59,12 +68,21 @@ body {
   position: absolute;
   width: 20vw;
   height: 89vh;
-  margin-top: 11vh;
+  top: calc(100px);
   border-right: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
-.header-worktime-text {
+.header-worktime-item {
+  bottom: 0;
   color: white;
+  display: flex;
+  font-family: "open_sansbold";
+  transform: rotate(-90deg);
+  font-size: 15px;
 }
 
 .header-bottom-line {
@@ -133,6 +151,7 @@ body {
   border-radius: 5px;
   background-color: rgba(232, 195, 0, 1);
   transition-duration: 0.4s;
+  font-family: "open_sansbold";
 }
 
 .header-mainbuttons-button1:hover {
@@ -148,6 +167,7 @@ body {
   border-radius: 5px;
   background-color: transparent;
   transition-duration: 0.4s;
+  font-family: "open_sansbold";
 }
 
 .header-mainbuttons-button2:hover {
@@ -177,4 +197,75 @@ body {
   height: 5.5vh;
   width: 5.5vh;
   border-radius: 5.5vh;
+}
+
+.header-socials {
+  position: absolute;
+  width: 20vw;
+  height: 89vh;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  right: 0%;
+  top: calc(100px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.header-socials-item {
+  margin-right: 4vw;
+  margin-bottom: 3vh;
+}
+
+.header-social:last-child {
+  margin-bottom: 0;
+}
+
+.header-socials-item-btn {
+  background-color: transparent;
+  width: 7vh;
+  height: 7vh;
+  border-radius: 7vh;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  transition-duration: 0.4s;
+}
+
+.header-socials-item-btn:hover {
+  border: 2px solid rgba(232, 195, 0, 1);
+}
+
+.aboutus {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.aboutus-fire {
+  margin-top: 8vh;
+  padding-bottom: 4vh;
+}
+
+.aboutus-text {
+  text-align: center;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutus-text-title {
+  font-family: "open_sansbold";
+  font-size: 50px;
+}
+
+.aboutus-text-other1 {
+  font-size: 22px;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.aboutus-text-other1 {
+  font-size: 20px;
+  text-align: center;
 }
