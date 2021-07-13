@@ -265,20 +265,30 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.aboutus-text-other1 {
+.aboutus-text-other2 {
   font-size: 20px;
   text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 200;
 }
 
 .ourteam {
-  background: url(./images/specialty-bg.png);
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+}
+
+.ourteam-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .ourteam-title {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  margin-top: 2vh;
+  margin-top: 6vh;
 }
 
 .ourteam-main {
@@ -287,6 +297,8 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  position: absolute;
+  margin-top: 10vh;
 }
 
 .ourteam-main-info {
@@ -299,21 +311,85 @@ body {
 
 .ourteam-main-info-title {
   font-family: "open_sansbold";
+  color: white;
   font-size: 50px;
 }
 
 .ourteam-main-info-text1 {
   font-size: 22px;
   text-align: center;
+  color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .ourteam-main-info-text2 {
   font-size: 20px;
   text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 200;
+  color: white;
 }
 
-.ourteam-bg {
+.booking {
+  position: relative;
+  padding-top: 10vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.booking-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 50vw;
+}
+
+.booking-info-title {
+  font-family: "open_sansbold";
+  font-size: 50px;
+}
+
+.booking-info-forms {
+  display: flex;
+  flex-direction: row;
+  margin-top: 4vh;
+}
+
+.booking-info-forms-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-info-forms-input-item {
+  height: 6vh;
+  width: 15vw;
+  background: rgba(229, 229, 229, 1);
+  border: 1px solid rgba(229, 229, 229, 1);
+  border-radius: 0.7vh;
+  margin-bottom: 0.7vw;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+}
+
+.booking-info-book {
+  width: 31.5vw;
+}
+
+.booking-info-book-btn {
   width: 100%;
-  height: 80vh;
+  height: 6vh;
+  font-family: "open_sansbold";
+  background: rgba(232, 195, 0, 1);
+  color: white;
+  border: 2px solid rgba(232, 195, 0, 1);
+  border-radius: 0.7vh;
+  transition-duration: 0.4s;
+}
+
+.booking-info-book-btn:hover {
+  border: 2px solid white;
 }
