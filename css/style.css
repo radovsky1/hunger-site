@@ -269,3 +269,51 @@ body {
   font-size: 20px;
   text-align: center;
 }
+
+.ourteam {
+  background: url(./images/specialty-bg.png);
+}
+
+.ourteam-title {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 2vh;
+}
+
+.ourteam-main {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ourteam-main-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 50vw;
+}
+
+.ourteam-main-info-title {
+  font-family: "open_sansbold";
+  font-size: 50px;
+}
+
+.ourteam-main-info-text1 {
+  font-size: 22px;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ourteam-main-info-text2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.ourteam-bg {
+  width: 100%;
+  height: 80vh;
+}
