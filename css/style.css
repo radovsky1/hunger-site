@@ -1,4 +1,12 @@
 @font-face {
+  font-family: "juice";
+  src: url("fonts/juice-webfont.woff2") format("woff2"),
+    url("fonts/juice-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "open_sansbold";
   src: url("fonts/opensans-bold-webfont.woff2") format("woff2"),
     url("fonts/opensans-bold-webfont.woff") format("woff");
@@ -125,6 +133,8 @@ body {
   bottom: 46%;
   left: 50%;
   transform: translate(-50%);
+  width: 40%;
+  height: 20%;
 }
 
 .header-mainlogo-item {
@@ -245,6 +255,11 @@ body {
 .aboutus-fire {
   margin-top: 8vh;
   padding-bottom: 4vh;
+  position: relative;
+  width: 45%;
+  height: 45%;
+  margin-bottom: auto;
+  margin-top: auto;
 }
 
 .aboutus-text {
@@ -256,17 +271,17 @@ body {
 
 .aboutus-text-title {
   font-family: "open_sansbold";
-  font-size: 50px;
+  font-size: 6vh;
 }
 
 .aboutus-text-other1 {
-  font-size: 22px;
+  font-size: 2.5vh;
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .aboutus-text-other2 {
-  font-size: 20px;
+  font-size: 2vh;
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 200;
@@ -309,21 +324,29 @@ body {
   width: 50vw;
 }
 
+.ourteam-main-chef {
+  position: relative;
+  width: 40%;
+  height: 40%;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
 .ourteam-main-info-title {
   font-family: "open_sansbold";
   color: white;
-  font-size: 50px;
+  font-size: 6vh;
 }
 
 .ourteam-main-info-text1 {
-  font-size: 22px;
+  font-size: 2.5vh;
   text-align: center;
   color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .ourteam-main-info-text2 {
-  font-size: 20px;
+  font-size: 2vh;
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 200;
@@ -339,6 +362,14 @@ body {
   align-items: center;
   justify-content: center;
   padding-bottom: 10vh;
+}
+
+.booking-img {
+  position: relative;
+  width: 45%;
+  height: 45%;
+  margin-bottom: auto;
+  margin-top: auto;
 }
 
 .booking-info {
@@ -373,7 +404,7 @@ body {
   border-radius: 0.7vh;
   margin-bottom: 0.7vw;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 18px;
+  font-size: 1.7vh;
 }
 
 .booking-info-book {
@@ -399,6 +430,14 @@ body {
   position: relative;
   width: 100vw;
   height: 80vh;
+}
+
+.specialties-main-dish {
+  position: relative;
+  width: 40%;
+  height: 40%;
+  margin-bottom: auto;
+  margin-top: auto;
 }
 
 .specialties-bg {
@@ -435,18 +474,18 @@ body {
 .specialties-main-info-title {
   font-family: "open_sansbold";
   color: white;
-  font-size: 50px;
+  font-size: 6vh;
 }
 
 .specialties-main-info-text1 {
-  font-size: 22px;
+  font-size: 2.5vh;
   text-align: center;
   color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .specialties-main-info-text2 {
-  font-size: 20px;
+  font-size: 2.2vh;
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 200;
@@ -478,6 +517,10 @@ body {
   background: rgba(232, 195, 0, 1);
 }
 
+.menu-main {
+  width: 100vw;
+}
+
 .menu-info {
   width: 40vw;
   display: flex;
@@ -490,11 +533,11 @@ body {
 
 .menu-info-title {
   font-family: "open_sansbold";
-  font-size: 50px;
+  font-size: 6vh;
 }
 
 .menu-info-text {
-  font-size: 22px;
+  font-size: 2.5vh;
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -515,7 +558,42 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  font-size: 1.7vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
   border-right: 2px solid rgba(51, 51, 51, 0.2);
+}
+
+.menu-main {
+  margin-top: 5vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 3vh;
+}
+
+.menu-main-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-main-bar-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2vh;
+}
+
+.menu-main-bar-item-info {
+  font-family: "juice";
+  font-size: 2vh;
+}
+
+.menu-main-bar-item-optional {
+  font-size: 1.5vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgba(51, 51, 51, 0.5);
 }
